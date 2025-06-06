@@ -102,7 +102,7 @@ iframe{
     text-align: center;
     border: #00568c 5px solid;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 40px auto;
     display: block;
 }
 
@@ -159,6 +159,20 @@ li {
     padding: 50px;
 }
 
+a {
+    text-decoration: none;
+    color: #008e66;
+}
+
+.card:hover{
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0);
+}
+
+
+
+
+
+
 
 
 
@@ -174,21 +188,9 @@ li {
     border: 0px;
 }
  
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav li {
-    float: left;
-    color: #008e66;
-    padding: 5px;
-}
-nav li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+
+nav > a {
+    padding: 5px 5px;
     text-decoration: none;
 }
 .navbar {
