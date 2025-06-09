@@ -13,6 +13,10 @@ font-family: Georiga;
     width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: #008e66;
@@ -101,11 +105,22 @@ li {
     padding: 5px;
 }
 
-.invisable{
-    height: 20%;
+#invisable{
+    height: 40%;
     width: 40%;
     background-color: #00568c;
-    margin: 5px auto;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.toggle{
+    width: 40%;
+    position: relative;
+}
+
+#button, #buttons {
+    text-align: center;
 }
 
 .container {
@@ -163,7 +178,13 @@ li {
     border: none;
     text-align: center;
     width: 20%;
+    height: 40%;
+    padding: 20px;
     
+}
+
+.toggle {
+    width: 20%;
 }
 
 .bttn > p {
@@ -194,29 +215,27 @@ li {
     width: 40px;
 }
 
-#nav {
-    top: 0;
-    overflow: hidden;
-    border: 0px;
-    display: flex;
-}
- 
-
-nav > a {
-    padding: 5px 5px;
-    text-decoration: none;
-    width: 100%;
-}
-.navbar {
-        background-color: #00568c;
+nav, footer{
+    background-color: #00568c;
 }
 
-.nav-item {
-    padding: 5px;
-    margin: 5px;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.test {
-    width: 100%;
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00568c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*-------- Tablet Media Query --------*/
