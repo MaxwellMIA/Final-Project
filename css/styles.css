@@ -15,12 +15,12 @@ font-family: Georiga;
 
 a {
     text-decoration: none;
-    color: #008e66;
+    color: #ffffff;
     text-align: center;
 }
 
 a:hover{
-    color: #006f4f;
+    color: #cccccc;
 }
 
 body {
