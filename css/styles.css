@@ -13,33 +13,35 @@ font-family: Georiga;
     width: 100%;
 }
 
-p {
-    margin: 0;
-}
-
 a {
     text-decoration: none;
     color: #008e66;
+    text-align: center;
+}
+
+a:hover{
+    color: #006f4f;
 }
 
 body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, p, ul, li {
-    text-align: center;
+footer > p{
+    background-color: #3d3d3d;
+    color: white;
 }
 
-h2, h3 {
-    color: #00568c;
+h1, h2, h3, p, ul, li {
+    text-align: center;
 }
 
 h1, h2, h3{
     font-family: Georiga !important;
 }
 
-footer{
-    background-color: gainsboro;
+h2, h3 {
+    color: #00568c;
 }
 
 iframe{
@@ -56,36 +58,11 @@ li {
     list-style: none;
 }
 
+p {
+    margin: 0;
+}
 
 /* class */
-
-#hero {
-    background-image: linear-gradient(#00568c, #008e66);
-    height: 175px;
-    width: 100%;
-    display: grid;
-}
-
-#hero > p {
-    text-align: center;
-    padding-top: 10px;
-    font-weight: bold;
-}
-
-.circle{
-    width: 100px;
-    height: 100px;
-    background-color: #008e66;
-    margin: 10px;
-    border-radius: 50%;
-    transition: 3s;
-    margin: 0 auto;
-}
-
-.circle:hover{
-    background-color: #00568c;
-    border-radius: 0%;
-}
 
 .box{
     width: 300px;
@@ -105,28 +82,42 @@ li {
     padding: 5px;
 }
 
-#invisable{
+.bttn {
+    background-image: linear-gradient(#00568c, #008e66);
+    border: none;
+    text-align: center;
     height: 40%;
-    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.bttn:hover{
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0);
+}
+
+.bttn > p {
+    color: lightgray;
+    text-align: center;
+}
+ 
+.buttn{
+    background-color: #3d3d3d;
+    border: none;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #008e66;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 3s;
+    margin: 0 auto;
+}
+
+.circle:hover{
     background-color: #00568c;
-    text-align: center;
-    margin: 20px auto;
-    padding: 5px;
-}
-
-.toggle{
-    width: 40%;
-    position: relative;
-}
-
-#button, #buttons {
-    text-align: center;
-}
-
-.container {
-    display: grid;
-    justify-content: center;
-    flex-wrap: wrap;
+    border-radius: 0%;
 }
 
 .card{
@@ -140,19 +131,24 @@ li {
     padding: 20px;
 }
 
+.card:hover{
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0);
+}
 
 .col {
     width: 335px;
     margin: 50px;
 }
 
-.gray {
-    height: auto;
-    width: 50%;
-    background-color: rgb(240, 240, 240);
-    border-radius: 5%;
-    margin: 0 auto;
+.contact {
+    margin: 50px auto;
+    padding: 50px;
+}
 
+.container {
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .explore {
@@ -173,40 +169,57 @@ li {
     box-shadow: 0 0px 16px 0 rgba(0, 0, 0);
 }
 
-.bttn {
-    background-image: linear-gradient(#00568c, #008e66);
-    border: none;
+.gray {
+    height: auto;
+    width: 50%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.toggle{
+    width: 40%;
+    position: relative;
+    background-color: #00568c;
+    border-radius: 10px;
+}
+
+.white{
+    color: white;
+}
+
+/* ID */
+
+#button, #buttons {
     text-align: center;
-    width: 20%;
+}
+
+#footer2 {
+    background-color: #3d3d3d;
+}
+
+#hero {
+    background-image: linear-gradient(#00568c, #008e66);
+    height: 175px;
+    width: 100%;
+    display: grid;
+}
+
+#hero > p {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#invisable{
     height: 40%;
-    padding: 20px;
-    
-}
-
-.toggle {
-    width: 20%;
-}
-
-.bttn > p {
-    color: lightgray;
-}
-
-.contact {
-    margin: 50px auto;
-    padding: 50px;
-}
-
-.card:hover{
-    box-shadow: 0 0px 16px 0 rgba(0, 0, 0);
-}
-
-
-
-
-
-
-
-
+    width: 40%;
+    background-color: #008e66;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+}  
 
 /* nav */
 
@@ -238,14 +251,26 @@ nav, footer{
   display: block;
 }
 
-/*-------- Tablet Media Query --------*/
+/*-------- Phone Media Query --------*/
+@media only screen and (max-width: 769px) {
+    .bttn{
+        width: 30%;
+    }
+}
+
+/* Tablet Media Query */
 @media screen and (min-width: 769px) {
-
+    .bttn{
+        width: 30%;
+    }
 }
-/*-------- End of Tablet Media Query --------*/
 
-/*-------- Desktop Media Query --------*/
+/* Desktop Media Query */
 @media screen and (min-width: 1025px) {
-
+    .bttn{
+        width: 20%;
+    }
+    .buttn{
+        width: 20%;
+    }
 }
-/*-------- End Desktop Media Query --------*/

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-        
+    
     <nav class="dropdown">
         <img id="logo" src="images/logo.png" alt="Seaway techs logo.">
-        <span>Computer & Information Science</span>
+        <span class="white">Computer & Information Science</span>
         <div class="dropdown-content">
             <ul>
             <li><a href="#hero">Home</a></li>
@@ -25,9 +25,9 @@
     </nav>
 
     <header id="hero">
-        <h1>Web Design Excellence Since 2025</h1>
-        <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
-        <button class="explore"><a href="link-2">Explore Our Services</a></button>
+        <h1 class="white">Web Design Excellence Since 2025</h1>
+        <p class="white">We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
+        <button class="explore"><a href="#services">Explore Our Services</a></button>
         <br>
     </header>
     <br>
@@ -92,13 +92,13 @@
         <div id="button">
             <h3>Visibility Property Demo</h3>
             <p>Click the button to toggle element visibility (notice it still takes up space):</p>
-            <button onclick="toggle()" class="toggle">Toggle</button>
-            <div style="visibility: hidden;" id="invisable"><p>This element demonstrates the visibility property! When hidden, it still occupies space in the layout.</p></div>
+            <button onclick="toggle()" class="toggle white">Toggle</button>
+            <div style="visibility: hidden;" id="invisable" class="white"><p>This element demonstrates the visibility property! When hidden, it still occupies space in the layout.</p></div>
         </div>
         <div>
             <h3>Box Model Demonstration</h3>
             <p>Hover to see padding, margin, and border changes:</p>
-            <div class="box">border 10px, margin 10px, padding 10px </div>
+            <div class="box white">border 10px, margin 10px, padding 10px </div>
         </div>
         <div>
             <h3>Embedded Content with IFrames</h3>
@@ -131,7 +131,7 @@
 </main>
 <script src="main.js"></script>
     <footer>
-        <nav><a href="#hero">Home </a><a href="#services">Services </a><a href="#about">About </a><a href="#portfolio">Portfolio </a><a href="#contact">Contact</a></nav>
+        <nav id="footer2"><button class="buttn"><a class="white" href="#hero">Home </a></button><button class="buttn"><a class="white" href="#services">Services </a></button><button class="buttn"><a class="white" href="#about">About </a></button><button class="buttn"><a class="white" href="#portfolio">Portfolio </a></button><button class="buttn"><a class="white" href="#contact">Contact</a></button></nav>
         <p>&copy; 2025 Seaway Computer & Information Science. All rights reserved. Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.</p>
     </footer>
 </body>
